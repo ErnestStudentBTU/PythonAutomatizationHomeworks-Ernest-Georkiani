@@ -1,0 +1,24 @@
+[project]
+name = "task4-bonus"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ernest3231",email = "90681597+ernest3231@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "boto3 (>=1.37.28,<2.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "typer (>=0.15.2,<0.16.0)",
+    "python-magic (>=0.4.27,<0.5.0)",
+    "python-magic-bin (>=0.4.14,<0.5.0)"
+]
+
+[tool.poetry]
+packages = [{include = "task4_bonus", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
